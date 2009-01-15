@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  votes: 1
+  sex: MyString
+
+two:
+  votes: 1
+  sex: MyString

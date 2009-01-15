@@ -1,0 +1,29 @@
+<h1>Editing suggestion</h1>
+
+<%= error_messages_for :suggestion %>
+
+<% form_for(@suggestion) do |f| %>
+  <p>
+    <b>Name</b><br />
+    <%= @suggestion.name %>
+  </p>
+
+  <p>
+    <b>Sex</b><br />
+    <%= f.select :sex,
+                    Suggestion::SEX_TYPES,
+                    :prompt => "Name for..."
+    %>
+  </p>
+
+  <p>
+    <b>Description</b><br/>
+    <%= f.text_area :desc %>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @suggestion %> |
+<%= link_to 'Home', suggestions_path %>

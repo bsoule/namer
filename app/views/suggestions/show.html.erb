@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @suggestion.name %>
+</p>
+
+<p>
+  <b>Votes:</b>
+  <%=h @suggestion.votes %>
+</p>
+
+<p>
+  <b>Sex:</b>
+  <%=h @suggestion.sex %>
+</p>
+
+
+<%= link_to 'Edit', edit_suggestion_path(@suggestion) %> |
+<%= link_to 'Home', suggestions_path %>

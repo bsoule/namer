@@ -1,0 +1,60 @@
+<%= javascript_include_tag :defaults %>
+
+<h1>Name suggestions</h1>
+
+
+<table>
+  <tr>
+    <th>Votes</th>
+    <th>&nbsp;</th>
+    <th>Name</th>
+  </tr>
+
+<% for name in @suggestions %>
+  <tr>
+    <td>
+      <span id="suggestion<%= name.id.to_s %>">
+        <%=name.votes%>
+    </span></td>
+    <td><%= button_to "^",
+            { :action => 'modify_votes', 
+              :id => name.id, 
+              :by => 1 },
+            :update => "suggestion" + name.id.to_s %>
+   <%= button_to "v",
+            { :action => 'modify_votes', 
+              :id => name.id, 
+              :by => -1 },
+            :update => "suggestion" + name.id.to_s %>
+    </td>
+    <td><%=h name.name %></td>
+    <td><%=h name.sex %></td>
+    <td><%=h name.desc %></td> 
+    <td>(<%= link_to 'Edit', edit_suggestion_path(name) %>) 
+        <span id="hidedelete" >
+          <%= link_to 'Destroy', name, 
+                      :confirm => 'Are you sure?', 
+                      :method => :delete %>
+        </span>
+    </td>
+    <!--<td><%= link_to 'Show', name%></td>-->
+  </tr>
+<% end %>
+<tr>
+<td></td>
+<td></td>
+<td colspan=4>
+<% form_for :suggestion do |form| %>
+  <%= form.text_field :name %>
+  <%= form.submit "Create" %>
+<% end %>
+</td>
+</tr>
+
+</table>
+
+
+<br />
+
+<%= link_to 'New', new_suggestion_path %>
+

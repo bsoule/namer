@@ -1,0 +1,53 @@
+<%= javascript_include_tag :defaults %>
+
+<h1>Name suggestions</h1>
+<h2> <%= @header_text %> </h1>
+
+<%= link_to "Hot", { :action => 'submissions', :order => 'hot' } %> | 
+<%= link_to "New", { :action => 'submissions', :order => 'new' } %> | 
+<%= link_to 'New suggestion', new_suggestion_path  %>
+
+<table>
+  <tr>
+    <th>Rank</th>
+    <th>Vote</th>
+    <th>Name</th>
+    <!--<th>Sex</th>-->
+  </tr>
+
+<% for name in @suggestions %>
+  <tr>
+    <td><span id="suggestion<%= name.id.to_s %>"> 
+        <%=name.votes%> 
+        </span>
+    </td>
+    <td><%= button_to "^",
+            { :action => 'modify_votes', 
+              :id => name.id, 
+              :by => 1 },
+            :update => "suggestion" + name.id.to_s %>
+   <%= button_to "v",
+            { :action => 'modify_votes', 
+              :id => name.id, 
+              :by => -1 },
+            :update => "suggestion" + name.id.to_s %>
+    </td>
+    <td><%=h name.name %></td>
+    <td><%=h name.sex %></td>
+    <td>(<%= link_to 'Edit', edit_suggestion_path(name) %>) 
+        <span id="hidedelete" >
+          <%= link_to 'Destroy', name, 
+                      :confirm => 'Are you sure?', 
+                      :method => :delete %>
+        </span>
+    </td>
+    <!--<td><%= link_to 'Show', name%></td>-->
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to "Hot", { :action => 'submissions', :order => 'hot' } %> | 
+<%= link_to "New", { :action => 'submissions', :order => 'new' } %> | 
+<%= link_to 'New suggestion', new_suggestion_path  %>
