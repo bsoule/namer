@@ -1,0 +1,71 @@
+  [4;36;1mSQL (0.022769)[0m   [0;1mSELECT count(*) AS count_all FROM suggestions [0m
+
+
+Processing SuggestionsController#create (for 0.0.0.0 at 2009-01-15 16:56:09) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "suggestion"=>{}, "controller"=>"suggestions"}
+  [4;35;1mSuggestion Create (0.000507)[0m   [0mINSERT INTO suggestions ("name", "updated_at", "votes", "desc", "sex", "created_at") VALUES(NULL, '2009-01-15 16:56:09', 1, NULL, NULL, '2009-01-15 16:56:09')[0m
+Redirected to http://test.host/suggestions
+Completed in 0.00733 (136 reqs/sec) | DB: 0.02328 (317%) | 302 Found [http://test.host/suggestions?]
+  [4;36;1mSQL (0.000191)[0m   [0;1mSELECT count(*) AS count_all FROM suggestions [0m
+  [4;35;1mSQL (0.000244)[0m   [0mSELECT count(*) AS count_all FROM suggestions [0m
+  [4;36;1mSuggestion Load (0.000246)[0m   [0;1mSELECT * FROM suggestions WHERE (suggestions."id" = 953125641) [0m
+
+
+Processing SuggestionsController#destroy (for 0.0.0.0 at 2009-01-15 16:56:09) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.000276)[0m   [0mSELECT * FROM suggestions WHERE (suggestions."id" = 953125641) [0m
+  [4;36;1mSuggestion Destroy (0.000285)[0m   [0;1m DELETE FROM suggestions
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/suggestions
+Completed in 0.00157 (638 reqs/sec) | DB: 0.00124 (79%) | 302 Found [http://test.host/suggestions/953125641]
+  [4;35;1mSQL (0.000139)[0m   [0mSELECT count(*) AS count_all FROM suggestions [0m
+  [4;36;1mSuggestion Load (0.000245)[0m   [0;1mSELECT * FROM suggestions WHERE (suggestions."id" = 953125641) [0m
+
+
+Processing SuggestionsController#edit (for 0.0.0.0 at 2009-01-15 16:56:09) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.000202)[0m   [0mSELECT * FROM suggestions WHERE (suggestions."id" = 953125641) [0m
+Rendering template within layouts/suggestions
+Rendering suggestions/edit
+Completed in 0.00693 (144 reqs/sec) | Rendering: 0.00635 (91%) | DB: 0.00059 (8%) | 200 OK [http://test.host/suggestions/953125641/edit]
+
+
+Processing SuggestionsController#index (for 0.0.0.0 at 2009-01-15 16:56:09) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.000968)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.03450 (28 reqs/sec) | Rendering: 0.03280 (95%) | DB: 0.00097 (2%) | 200 OK [http://test.host/suggestions]
+
+
+Processing SuggestionsController#new (for 0.0.0.0 at 2009-01-15 16:56:09) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"suggestions"}
+Rendering template within layouts/suggestions
+Rendering suggestions/new
+Completed in 0.00420 (238 reqs/sec) | Rendering: 0.00379 (90%) | DB: 0.00000 (0%) | 200 OK [http://test.host/suggestions/new]
+  [4;35;1mSuggestion Load (0.000338)[0m   [0mSELECT * FROM suggestions WHERE (suggestions."id" = 953125641) [0m
+
+
+Processing SuggestionsController#show (for 0.0.0.0 at 2009-01-15 16:56:09) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.000307)[0m   [0;1mSELECT * FROM suggestions WHERE (suggestions."id" = 953125641) [0m
+Rendering template within layouts/suggestions
+Rendering suggestions/show
+Completed in 0.00271 (369 reqs/sec) | Rendering: 0.00179 (66%) | DB: 0.00064 (23%) | 200 OK [http://test.host/suggestions/953125641]
+  [4;35;1mSuggestion Load (0.000254)[0m   [0mSELECT * FROM suggestions WHERE (suggestions."id" = 953125641) [0m
+
+
+Processing SuggestionsController#update (for 0.0.0.0 at 2009-01-15 16:56:09) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "suggestion"=>{}, "id"=>"953125641", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.000386)[0m   [0;1mSELECT * FROM suggestions WHERE (suggestions."id" = 953125641) [0m
+  [4;35;1mSuggestion Update (0.000365)[0m   [0mUPDATE suggestions SET "created_at" = '2009-01-15 16:56:09', "name" = NULL, "desc" = NULL, "votes" = 1, "sex" = 'MyString', "updated_at" = '2009-01-15 16:56:09' WHERE "id" = 953125641[0m
+Redirected to http://test.host/suggestions/953125641
+Completed in 0.00233 (428 reqs/sec) | DB: 0.00100 (43%) | 302 Found [http://test.host/suggestions/953125641?]

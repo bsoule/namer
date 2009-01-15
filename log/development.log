@@ -7815,3 +7815,133 @@ Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 15:16:10) [G
 Rendering template within layouts/suggestions
 Rendering suggestions/index
 Completed in 0.02117 (47 reqs/sec) | Rendering: 0.01364 (64%) | DB: 0.00179 (8%) | 200 OK [http://localhost/suggestions]
+  [4;36;1mSQL (0.000259)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.000266)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000159)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000156)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000204)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000170)[0m   [0mSELECT * FROM schema_info[0m
+  [4;36;1mSQL (0.000185)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000055)[0m   [0mPRAGMA index_list(suggestions)[0m
+  [4;36;1mSQL (0.000221)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000173)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000130)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000130)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000129)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000154)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000172)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000052)[0m   [0;1mPRAGMA index_list(suggestions)[0m
+  [4;35;1mSQL (0.000143)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: suggestions: DROP TABLE suggestions[0m
+  [4;35;1mSQL (0.003160)[0m   [0mCREATE TABLE suggestions ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "votes" integer DEFAULT 1, "sex" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL, "name" varchar(255) DEFAULT NULL, "desc" varchar(255) DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002761)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.002776)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.002497)[0m   [0;1mUPDATE schema_info SET version = 4[0m
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 17:26:09) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001829)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02562 (39 reqs/sec) | Rendering: 0.01805 (70%) | DB: 0.00183 (7%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 17:26:51) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001957)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.07060 (14 reqs/sec) | Rendering: 0.06263 (88%) | DB: 0.00196 (2%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 17:28:40) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.002013)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02220 (45 reqs/sec) | Rendering: 0.01417 (63%) | DB: 0.00201 (9%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 17:28:42) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001716)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.01681 (59 reqs/sec) | Rendering: 0.00994 (59%) | DB: 0.00172 (10%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 17:29:12) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001742)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.01975 (50 reqs/sec) | Rendering: 0.01273 (64%) | DB: 0.00174 (8%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#modify_votes (for 127.0.0.1 at 2009-01-15 17:29:18) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"by"=>"-1", "action"=>"modify_votes", "id"=>"25", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.000244)[0m   [0mSELECT * FROM suggestions WHERE (suggestions."id" = 25) [0m
+  [4;36;1mSuggestion Update (0.000433)[0m   [0;1mUPDATE suggestions SET "created_at" = '2009-01-15 15:07:27', "name" = 'Hal', "desc" = NULL, "votes" = 6, "sex" = NULL, "updated_at" = '2009-01-15 17:29:18' WHERE "id" = 25[0m
+Redirected to http://localhost:3000/suggestions
+Completed in 0.01248 (80 reqs/sec) | DB: 0.00068 (5%) | 302 Found [http://localhost/suggestions/modify_votes/25?by=-1]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 17:29:18) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001673)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.01689 (59 reqs/sec) | Rendering: 0.00995 (58%) | DB: 0.00167 (9%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#modify_votes (for 127.0.0.1 at 2009-01-15 17:29:20) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"by"=>"-1", "action"=>"modify_votes", "id"=>"25", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.000235)[0m   [0;1mSELECT * FROM suggestions WHERE (suggestions."id" = 25) [0m
+  [4;35;1mSuggestion Update (0.000348)[0m   [0mUPDATE suggestions SET "created_at" = '2009-01-15 15:07:27', "name" = 'Hal', "desc" = NULL, "votes" = 5, "sex" = NULL, "updated_at" = '2009-01-15 17:29:20' WHERE "id" = 25[0m
+Redirected to http://localhost:3000/suggestions
+Completed in 0.01206 (82 reqs/sec) | DB: 0.00058 (4%) | 302 Found [http://localhost/suggestions/modify_votes/25?by=-1]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 17:29:20) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001761)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.01747 (57 reqs/sec) | Rendering: 0.01017 (58%) | DB: 0.00176 (10%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#modify_votes (for 127.0.0.1 at 2009-01-15 17:29:22) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"by"=>"-1", "action"=>"modify_votes", "id"=>"25", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.000276)[0m   [0mSELECT * FROM suggestions WHERE (suggestions."id" = 25) [0m
+  [4;36;1mSuggestion Update (0.000392)[0m   [0;1mUPDATE suggestions SET "created_at" = '2009-01-15 15:07:27', "name" = 'Hal', "desc" = NULL, "votes" = 4, "sex" = NULL, "updated_at" = '2009-01-15 17:29:22' WHERE "id" = 25[0m
+Redirected to http://localhost:3000/suggestions
+Completed in 0.01067 (93 reqs/sec) | DB: 0.00067 (6%) | 302 Found [http://localhost/suggestions/modify_votes/25?by=-1]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 17:29:22) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001668)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.01672 (59 reqs/sec) | Rendering: 0.00973 (58%) | DB: 0.00167 (9%) | 200 OK [http://localhost/suggestions]

@@ -27,12 +27,12 @@
       <span id="suggestion<%= name.id.to_s %>">
         <%=name.votes%>
     </span></td>
-    <td><%= button_to "^",
+    <td><%= link_to '&uArr',
             { :action => 'modify_votes', 
               :id => name.id, 
               :by => 1 },
             :update => "suggestion" + name.id.to_s %>
-   <%= button_to "v",
+   <%= link_to '&dArr',
             { :action => 'modify_votes', 
               :id => name.id, 
               :by => -1 },
