@@ -44,7 +44,7 @@ class SuggestionsController < ApplicationController
 
     respond_to do |format|
       if @suggestion.save
-        flash[:notice] = 'Suggestion was successfully created.'
+        #flash[:notice] = 'Suggestion was successfully created.'
         format.html { redirect_to(suggestions_url) } 
         format.xml  { render :xml => @suggestion, :status => :created, :location => @suggestion }
       else
@@ -83,10 +83,19 @@ class SuggestionsController < ApplicationController
     end
   end
 
+  #def modify_votes
+  #  @suggestion = Suggestion.find(params[:id])
+  #  @suggestion.update_attribute :votes, @suggestion.votes + params[:by].to_i 
+  #  render_text @suggestion.votes
+  #end
   def modify_votes
     @suggestion = Suggestion.find(params[:id])
     @suggestion.update_attribute :votes, @suggestion.votes + params[:by].to_i 
-    render_text @suggestion.votes
+    
+    respond_to do |format|
+      format.html { redirect_to(suggestions_url) }
+      format.xml  { head :ok }
+    end
   end
 
 end

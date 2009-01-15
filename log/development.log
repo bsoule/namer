@@ -7355,3 +7355,463 @@ Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 14:56:50) [G
 Rendering template within layouts/suggestions
 Rendering suggestions/index
 Completed in 0.02283 (43 reqs/sec) | Rendering: 0.01546 (67%) | DB: 0.00186 (8%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 15:07:15) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.004269)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02567 (38 reqs/sec) | Rendering: 0.01567 (61%) | DB: 0.00427 (16%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#create (for 127.0.0.1 at 2009-01-15 15:07:27) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"commit"=>"Create", "suggestion"=>{"name"=>"Hal"}, "authenticity_token"=>"dfd56a1c8e90d7ef6a77a9a5eac1fc96eb846f91", "action"=>"create", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Create (0.021290)[0m   [0;1mINSERT INTO suggestions ("name", "updated_at", "votes", "desc", "sex", "created_at") VALUES('Hal', '2009-01-15 15:07:27', 1, NULL, NULL, '2009-01-15 15:07:27')[0m
+Redirected to http://localhost:3000/suggestions
+Completed in 0.03423 (29 reqs/sec) | DB: 0.02129 (62%) | 302 Found [http://localhost/suggestions]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 15:07:27) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7BjoLbm90aWNlIilTdWdnZXN0aW9uIHdhcyBzdWNjZXNzZnVsbHkgY3Jl%0AYXRlZC4GOgpAdXNlZHsGOwdU--735836bf2ec31142402431ba6ba5aab51018993b
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001678)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.01773 (56 reqs/sec) | Rendering: 0.01070 (60%) | DB: 0.00168 (9%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#modify_votes (for 127.0.0.1 at 2009-01-15 15:11:12) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"by"=>"1", "authenticity_token"=>"dfd56a1c8e90d7ef6a77a9a5eac1fc96eb846f91", "action"=>"modify_votes", "id"=>"7", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.000250)[0m   [0;1mSELECT * FROM suggestions WHERE (suggestions."id" = 7) [0m
+  [4;35;1mSuggestion Update (0.000502)[0m   [0mUPDATE suggestions SET "created_at" = '2009-01-12 13:31:32', "name" = 'Cantor Wllm.', "desc" = 'hi', "votes" = 7, "sex" = 'boy', "updated_at" = '2009-01-15 15:11:12' WHERE "id" = 7[0m
+Redirected to http://localhost:3000/suggestions
+Completed in 0.01314 (76 reqs/sec) | DB: 0.00075 (5%) | 302 Found [http://localhost/suggestions/modify_votes/7?by=1]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 15:11:12) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001839)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02266 (44 reqs/sec) | Rendering: 0.01539 (67%) | DB: 0.00184 (8%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#modify_votes (for 127.0.0.1 at 2009-01-15 15:11:14) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"by"=>"1", "authenticity_token"=>"dfd56a1c8e90d7ef6a77a9a5eac1fc96eb846f91", "action"=>"modify_votes", "id"=>"7", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.000240)[0m   [0mSELECT * FROM suggestions WHERE (suggestions."id" = 7) [0m
+  [4;36;1mSuggestion Update (0.000343)[0m   [0;1mUPDATE suggestions SET "created_at" = '2009-01-12 13:31:32', "name" = 'Cantor Wllm.', "desc" = 'hi', "votes" = 8, "sex" = 'boy', "updated_at" = '2009-01-15 15:11:14' WHERE "id" = 7[0m
+Redirected to http://localhost:3000/suggestions
+Completed in 0.01215 (82 reqs/sec) | DB: 0.00058 (4%) | 302 Found [http://localhost/suggestions/modify_votes/7?by=1]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 15:11:14) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001591)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.01768 (56 reqs/sec) | Rendering: 0.01077 (60%) | DB: 0.00159 (8%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#modify_votes (for 127.0.0.1 at 2009-01-15 15:11:17) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"by"=>"1", "authenticity_token"=>"dfd56a1c8e90d7ef6a77a9a5eac1fc96eb846f91", "action"=>"modify_votes", "id"=>"20", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.000346)[0m   [0;1mSELECT * FROM suggestions WHERE (suggestions."id" = 20) [0m
+  [4;35;1mSuggestion Update (0.000338)[0m   [0mUPDATE suggestions SET "created_at" = '2009-01-14 17:21:39', "name" = 'Ruth', "desc" = NULL, "votes" = 3, "sex" = NULL, "updated_at" = '2009-01-15 15:11:17' WHERE "id" = 20[0m
+Redirected to http://localhost:3000/suggestions
+Completed in 0.01621 (61 reqs/sec) | DB: 0.00068 (4%) | 302 Found [http://localhost/suggestions/modify_votes/20?by=1]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 15:11:17) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001593)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.01750 (57 reqs/sec) | Rendering: 0.01082 (61%) | DB: 0.00159 (9%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#modify_votes (for 127.0.0.1 at 2009-01-15 15:11:21) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"by"=>"1", "authenticity_token"=>"dfd56a1c8e90d7ef6a77a9a5eac1fc96eb846f91", "action"=>"modify_votes", "id"=>"15", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.000277)[0m   [0mSELECT * FROM suggestions WHERE (suggestions."id" = 15) [0m
+  [4;36;1mSuggestion Update (0.000481)[0m   [0;1mUPDATE suggestions SET "created_at" = '2009-01-14 17:15:10', "name" = 'David Allen', "desc" = NULL, "votes" = 3, "sex" = NULL, "updated_at" = '2009-01-15 15:11:21' WHERE "id" = 15[0m
+Redirected to http://localhost:3000/suggestions
+Completed in 0.01268 (78 reqs/sec) | DB: 0.00076 (5%) | 302 Found [http://localhost/suggestions/modify_votes/15?by=1]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 15:11:21) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001754)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.01804 (55 reqs/sec) | Rendering: 0.01084 (60%) | DB: 0.00175 (9%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#modify_votes (for 127.0.0.1 at 2009-01-15 15:11:27) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"by"=>"-1", "authenticity_token"=>"dfd56a1c8e90d7ef6a77a9a5eac1fc96eb846f91", "action"=>"modify_votes", "id"=>"7", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.000239)[0m   [0;1mSELECT * FROM suggestions WHERE (suggestions."id" = 7) [0m
+  [4;35;1mSuggestion Update (0.000351)[0m   [0mUPDATE suggestions SET "created_at" = '2009-01-12 13:31:32', "name" = 'Cantor Wllm.', "desc" = 'hi', "votes" = 7, "sex" = 'boy', "updated_at" = '2009-01-15 15:11:27' WHERE "id" = 7[0m
+Redirected to http://localhost:3000/suggestions
+Completed in 0.01595 (62 reqs/sec) | DB: 0.00059 (3%) | 302 Found [http://localhost/suggestions/modify_votes/7?by=-1]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 15:11:27) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001756)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.07782 (12 reqs/sec) | Rendering: 0.01138 (14%) | DB: 0.00176 (2%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#modify_votes (for 127.0.0.1 at 2009-01-15 15:11:27) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"by"=>"-1", "authenticity_token"=>"dfd56a1c8e90d7ef6a77a9a5eac1fc96eb846f91", "action"=>"modify_votes", "id"=>"7", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.000288)[0m   [0mSELECT * FROM suggestions WHERE (suggestions."id" = 7) [0m
+  [4;36;1mSuggestion Update (0.000332)[0m   [0;1mUPDATE suggestions SET "created_at" = '2009-01-12 13:31:32', "name" = 'Cantor Wllm.', "desc" = 'hi', "votes" = 6, "sex" = 'boy', "updated_at" = '2009-01-15 15:11:27' WHERE "id" = 7[0m
+Redirected to http://localhost:3000/suggestions
+Completed in 0.01358 (73 reqs/sec) | DB: 0.00062 (4%) | 302 Found [http://localhost/suggestions/modify_votes/7?by=-1]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 15:11:27) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001653)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.01772 (56 reqs/sec) | Rendering: 0.01086 (61%) | DB: 0.00165 (9%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#modify_votes (for 127.0.0.1 at 2009-01-15 15:11:28) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"by"=>"-1", "authenticity_token"=>"dfd56a1c8e90d7ef6a77a9a5eac1fc96eb846f91", "action"=>"modify_votes", "id"=>"7", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.000302)[0m   [0;1mSELECT * FROM suggestions WHERE (suggestions."id" = 7) [0m
+  [4;35;1mSuggestion Update (0.000411)[0m   [0mUPDATE suggestions SET "created_at" = '2009-01-12 13:31:32', "name" = 'Cantor Wllm.', "desc" = 'hi', "votes" = 5, "sex" = 'boy', "updated_at" = '2009-01-15 15:11:28' WHERE "id" = 7[0m
+Redirected to http://localhost:3000/suggestions
+Completed in 0.01249 (80 reqs/sec) | DB: 0.00071 (5%) | 302 Found [http://localhost/suggestions/modify_votes/7?by=-1]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 15:11:28) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001648)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.01766 (56 reqs/sec) | Rendering: 0.01072 (60%) | DB: 0.00165 (9%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#modify_votes (for 127.0.0.1 at 2009-01-15 15:11:29) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"by"=>"-1", "authenticity_token"=>"dfd56a1c8e90d7ef6a77a9a5eac1fc96eb846f91", "action"=>"modify_votes", "id"=>"7", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.000301)[0m   [0mSELECT * FROM suggestions WHERE (suggestions."id" = 7) [0m
+  [4;36;1mSuggestion Update (0.000401)[0m   [0;1mUPDATE suggestions SET "created_at" = '2009-01-12 13:31:32', "name" = 'Cantor Wllm.', "desc" = 'hi', "votes" = 4, "sex" = 'boy', "updated_at" = '2009-01-15 15:11:29' WHERE "id" = 7[0m
+Redirected to http://localhost:3000/suggestions
+Completed in 0.01225 (81 reqs/sec) | DB: 0.00070 (5%) | 302 Found [http://localhost/suggestions/modify_votes/7?by=-1]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 15:11:29) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001576)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.01720 (58 reqs/sec) | Rendering: 0.01043 (60%) | DB: 0.00158 (9%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#modify_votes (for 127.0.0.1 at 2009-01-15 15:11:30) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"by"=>"-1", "authenticity_token"=>"dfd56a1c8e90d7ef6a77a9a5eac1fc96eb846f91", "action"=>"modify_votes", "id"=>"7", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.000276)[0m   [0;1mSELECT * FROM suggestions WHERE (suggestions."id" = 7) [0m
+  [4;35;1mSuggestion Update (0.000341)[0m   [0mUPDATE suggestions SET "created_at" = '2009-01-12 13:31:32', "name" = 'Cantor Wllm.', "desc" = 'hi', "votes" = 3, "sex" = 'boy', "updated_at" = '2009-01-15 15:11:30' WHERE "id" = 7[0m
+Redirected to http://localhost:3000/suggestions
+Completed in 0.01170 (85 reqs/sec) | DB: 0.00062 (5%) | 302 Found [http://localhost/suggestions/modify_votes/7?by=-1]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 15:11:30) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001597)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.01832 (54 reqs/sec) | Rendering: 0.01093 (59%) | DB: 0.00160 (8%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#create (for 127.0.0.1 at 2009-01-15 15:11:46) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"commit"=>"Create", "suggestion"=>{"name"=>"hi"}, "authenticity_token"=>"dfd56a1c8e90d7ef6a77a9a5eac1fc96eb846f91", "action"=>"create", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Create (0.000381)[0m   [0mINSERT INTO suggestions ("name", "updated_at", "votes", "desc", "sex", "created_at") VALUES('hi', '2009-01-15 15:11:46', 1, NULL, NULL, '2009-01-15 15:11:46')[0m
+Redirected to http://localhost:3000/suggestions
+Completed in 0.01115 (89 reqs/sec) | DB: 0.00038 (3%) | 302 Found [http://localhost/suggestions]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 15:11:46) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7BjoLbm90aWNlIilTdWdnZXN0aW9uIHdhcyBzdWNjZXNzZnVsbHkgY3Jl%0AYXRlZC4GOgpAdXNlZHsGOwdU--735836bf2ec31142402431ba6ba5aab51018993b
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001727)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.01864 (53 reqs/sec) | Rendering: 0.01144 (61%) | DB: 0.00173 (9%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#create (for 127.0.0.1 at 2009-01-15 15:12:21) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"commit"=>"Create", "suggestion"=>{"name"=>"foo"}, "authenticity_token"=>"dfd56a1c8e90d7ef6a77a9a5eac1fc96eb846f91", "action"=>"create", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Create (0.000357)[0m   [0mINSERT INTO suggestions ("name", "updated_at", "votes", "desc", "sex", "created_at") VALUES('foo', '2009-01-15 15:12:21', 1, NULL, NULL, '2009-01-15 15:12:21')[0m
+Redirected to http://localhost:3000/suggestions
+Completed in 0.01216 (82 reqs/sec) | DB: 0.00036 (2%) | 302 Found [http://localhost/suggestions]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 15:12:21) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001770)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.01987 (50 reqs/sec) | Rendering: 0.01271 (63%) | DB: 0.00177 (8%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 15:13:57) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001735)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02101 (47 reqs/sec) | Rendering: 0.01411 (67%) | DB: 0.00173 (8%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#create (for 127.0.0.1 at 2009-01-15 15:14:06) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"commit"=>"Create", "suggestion"=>{"name"=>"Beatrix"}, "authenticity_token"=>"dfd56a1c8e90d7ef6a77a9a5eac1fc96eb846f91", "action"=>"create", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Create (0.000421)[0m   [0;1mINSERT INTO suggestions ("name", "updated_at", "votes", "desc", "sex", "created_at") VALUES('Beatrix', '2009-01-15 15:14:06', 1, NULL, NULL, '2009-01-15 15:14:06')[0m
+Redirected to http://localhost:3000/suggestions
+Completed in 0.01151 (86 reqs/sec) | DB: 0.00042 (3%) | 302 Found [http://localhost/suggestions]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 15:14:06) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.002008)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02011 (49 reqs/sec) | Rendering: 0.01243 (61%) | DB: 0.00201 (9%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#destroy (for 127.0.0.1 at 2009-01-15 15:14:14) [DELETE]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"authenticity_token"=>"dfd56a1c8e90d7ef6a77a9a5eac1fc96eb846f91", "_method"=>"delete", "action"=>"destroy", "id"=>"28", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.000274)[0m   [0;1mSELECT * FROM suggestions WHERE (suggestions."id" = 28) [0m
+  [4;35;1mSuggestion Destroy (0.000475)[0m   [0m DELETE FROM suggestions
+ WHERE "id" = 28
+[0m
+Redirected to http://localhost:3000/suggestions
+Completed in 0.01156 (86 reqs/sec) | DB: 0.00075 (6%) | 302 Found [http://localhost/suggestions/28]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 15:14:14) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001782)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.01889 (52 reqs/sec) | Rendering: 0.01187 (62%) | DB: 0.00178 (9%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#destroy (for 127.0.0.1 at 2009-01-15 15:14:17) [DELETE]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"authenticity_token"=>"dfd56a1c8e90d7ef6a77a9a5eac1fc96eb846f91", "_method"=>"delete", "action"=>"destroy", "id"=>"27", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.000338)[0m   [0mSELECT * FROM suggestions WHERE (suggestions."id" = 27) [0m
+  [4;36;1mSuggestion Destroy (0.000461)[0m   [0;1m DELETE FROM suggestions
+ WHERE "id" = 27
+[0m
+Redirected to http://localhost:3000/suggestions
+Completed in 0.01345 (74 reqs/sec) | DB: 0.00080 (5%) | 302 Found [http://localhost/suggestions/27]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 15:14:17) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001646)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.01868 (53 reqs/sec) | Rendering: 0.01131 (60%) | DB: 0.00165 (8%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#destroy (for 127.0.0.1 at 2009-01-15 15:14:20) [DELETE]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"authenticity_token"=>"dfd56a1c8e90d7ef6a77a9a5eac1fc96eb846f91", "_method"=>"delete", "action"=>"destroy", "id"=>"26", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.000316)[0m   [0;1mSELECT * FROM suggestions WHERE (suggestions."id" = 26) [0m
+  [4;35;1mSuggestion Destroy (0.000341)[0m   [0m DELETE FROM suggestions
+ WHERE "id" = 26
+[0m
+Redirected to http://localhost:3000/suggestions
+Completed in 0.01284 (77 reqs/sec) | DB: 0.00066 (5%) | 302 Found [http://localhost/suggestions/26]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 15:14:20) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001619)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.01828 (54 reqs/sec) | Rendering: 0.01133 (61%) | DB: 0.00162 (8%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#modify_votes (for 127.0.0.1 at 2009-01-15 15:14:37) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"by"=>"1", "authenticity_token"=>"dfd56a1c8e90d7ef6a77a9a5eac1fc96eb846f91", "action"=>"modify_votes", "id"=>"25", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.000266)[0m   [0mSELECT * FROM suggestions WHERE (suggestions."id" = 25) [0m
+  [4;36;1mSuggestion Update (0.000505)[0m   [0;1mUPDATE suggestions SET "created_at" = '2009-01-15 15:07:27', "name" = 'Hal', "desc" = NULL, "votes" = 2, "sex" = NULL, "updated_at" = '2009-01-15 15:14:37' WHERE "id" = 25[0m
+Redirected to http://localhost:3000/suggestions
+Completed in 0.01567 (63 reqs/sec) | DB: 0.00077 (4%) | 302 Found [http://localhost/suggestions/modify_votes/25?by=1]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 15:14:37) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001627)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.01782 (56 reqs/sec) | Rendering: 0.01108 (62%) | DB: 0.00163 (9%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#modify_votes (for 127.0.0.1 at 2009-01-15 15:14:38) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"by"=>"1", "authenticity_token"=>"dfd56a1c8e90d7ef6a77a9a5eac1fc96eb846f91", "action"=>"modify_votes", "id"=>"16", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.000259)[0m   [0;1mSELECT * FROM suggestions WHERE (suggestions."id" = 16) [0m
+  [4;35;1mSuggestion Update (0.000382)[0m   [0mUPDATE suggestions SET "created_at" = '2009-01-14 17:16:04', "name" = 'Carmen', "desc" = NULL, "votes" = 2, "sex" = NULL, "updated_at" = '2009-01-15 15:14:38' WHERE "id" = 16[0m
+Redirected to http://localhost:3000/suggestions
+Completed in 0.01306 (76 reqs/sec) | DB: 0.00064 (4%) | 302 Found [http://localhost/suggestions/modify_votes/16?by=1]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 15:14:38) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001578)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.01786 (56 reqs/sec) | Rendering: 0.01114 (62%) | DB: 0.00158 (8%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#modify_votes (for 127.0.0.1 at 2009-01-15 15:14:39) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"by"=>"1", "authenticity_token"=>"dfd56a1c8e90d7ef6a77a9a5eac1fc96eb846f91", "action"=>"modify_votes", "id"=>"25", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.000284)[0m   [0mSELECT * FROM suggestions WHERE (suggestions."id" = 25) [0m
+  [4;36;1mSuggestion Update (0.000412)[0m   [0;1mUPDATE suggestions SET "created_at" = '2009-01-15 15:07:27', "name" = 'Hal', "desc" = NULL, "votes" = 3, "sex" = NULL, "updated_at" = '2009-01-15 15:14:39' WHERE "id" = 25[0m
+Redirected to http://localhost:3000/suggestions
+Completed in 0.01358 (73 reqs/sec) | DB: 0.00070 (5%) | 302 Found [http://localhost/suggestions/modify_votes/25?by=1]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 15:14:39) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001670)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.08713 (11 reqs/sec) | Rendering: 0.07736 (88%) | DB: 0.00167 (1%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#modify_votes (for 127.0.0.1 at 2009-01-15 15:14:43) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"by"=>"1", "authenticity_token"=>"dfd56a1c8e90d7ef6a77a9a5eac1fc96eb846f91", "action"=>"modify_votes", "id"=>"25", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.000361)[0m   [0;1mSELECT * FROM suggestions WHERE (suggestions."id" = 25) [0m
+  [4;35;1mSuggestion Update (0.000497)[0m   [0mUPDATE suggestions SET "created_at" = '2009-01-15 15:07:27', "name" = 'Hal', "desc" = NULL, "votes" = 4, "sex" = NULL, "updated_at" = '2009-01-15 15:14:43' WHERE "id" = 25[0m
+Redirected to http://localhost:3000/suggestions
+Completed in 0.01656 (60 reqs/sec) | DB: 0.00086 (5%) | 302 Found [http://localhost/suggestions/modify_votes/25?by=1]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 15:14:43) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001761)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.01781 (56 reqs/sec) | Rendering: 0.01073 (60%) | DB: 0.00176 (9%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#modify_votes (for 127.0.0.1 at 2009-01-15 15:14:45) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"by"=>"1", "authenticity_token"=>"dfd56a1c8e90d7ef6a77a9a5eac1fc96eb846f91", "action"=>"modify_votes", "id"=>"25", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.000356)[0m   [0mSELECT * FROM suggestions WHERE (suggestions."id" = 25) [0m
+  [4;36;1mSuggestion Update (0.000388)[0m   [0;1mUPDATE suggestions SET "created_at" = '2009-01-15 15:07:27', "name" = 'Hal', "desc" = NULL, "votes" = 5, "sex" = NULL, "updated_at" = '2009-01-15 15:14:45' WHERE "id" = 25[0m
+Redirected to http://localhost:3000/suggestions
+Completed in 0.01391 (71 reqs/sec) | DB: 0.00074 (5%) | 302 Found [http://localhost/suggestions/modify_votes/25?by=1]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 15:14:45) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001611)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.01790 (55 reqs/sec) | Rendering: 0.01106 (61%) | DB: 0.00161 (9%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#modify_votes (for 127.0.0.1 at 2009-01-15 15:14:47) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"by"=>"1", "authenticity_token"=>"dfd56a1c8e90d7ef6a77a9a5eac1fc96eb846f91", "action"=>"modify_votes", "id"=>"25", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.000260)[0m   [0;1mSELECT * FROM suggestions WHERE (suggestions."id" = 25) [0m
+  [4;35;1mSuggestion Update (0.000361)[0m   [0mUPDATE suggestions SET "created_at" = '2009-01-15 15:07:27', "name" = 'Hal', "desc" = NULL, "votes" = 6, "sex" = NULL, "updated_at" = '2009-01-15 15:14:47' WHERE "id" = 25[0m
+Redirected to http://localhost:3000/suggestions
+Completed in 0.01423 (70 reqs/sec) | DB: 0.00062 (4%) | 302 Found [http://localhost/suggestions/modify_votes/25?by=1]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 15:14:47) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001779)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.01781 (56 reqs/sec) | Rendering: 0.01085 (60%) | DB: 0.00178 (9%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#modify_votes (for 127.0.0.1 at 2009-01-15 15:14:48) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"by"=>"1", "authenticity_token"=>"dfd56a1c8e90d7ef6a77a9a5eac1fc96eb846f91", "action"=>"modify_votes", "id"=>"25", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.000232)[0m   [0mSELECT * FROM suggestions WHERE (suggestions."id" = 25) [0m
+  [4;36;1mSuggestion Update (0.000321)[0m   [0;1mUPDATE suggestions SET "created_at" = '2009-01-15 15:07:27', "name" = 'Hal', "desc" = NULL, "votes" = 7, "sex" = NULL, "updated_at" = '2009-01-15 15:14:48' WHERE "id" = 25[0m
+Redirected to http://localhost:3000/suggestions
+Completed in 0.01134 (88 reqs/sec) | DB: 0.00055 (4%) | 302 Found [http://localhost/suggestions/modify_votes/25?by=1]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 15:14:48) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001641)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.01798 (55 reqs/sec) | Rendering: 0.01089 (60%) | DB: 0.00164 (9%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#create (for 127.0.0.1 at 2009-01-15 15:15:05) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"commit"=>"Create", "suggestion"=>{"name"=>"Nan"}, "authenticity_token"=>"dfd56a1c8e90d7ef6a77a9a5eac1fc96eb846f91", "action"=>"create", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Create (0.000385)[0m   [0;1mINSERT INTO suggestions ("name", "updated_at", "votes", "desc", "sex", "created_at") VALUES('Nan', '2009-01-15 15:15:05', 1, NULL, NULL, '2009-01-15 15:15:05')[0m
+Redirected to http://localhost:3000/suggestions
+Completed in 0.01143 (87 reqs/sec) | DB: 0.00039 (3%) | 302 Found [http://localhost/suggestions]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 15:15:05) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001724)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.01811 (55 reqs/sec) | Rendering: 0.01116 (61%) | DB: 0.00172 (9%) | 200 OK [http://localhost/suggestions]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-15 15:16:10) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGNlMGIyYzUyNzY5Nzc0ODVlYTUyYzBjZDdkZDg1%0AMmYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--d4fe284cfe1d271081ff6f18e9910ff0d0dba6e4
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001789)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02117 (47 reqs/sec) | Rendering: 0.01364 (64%) | DB: 0.00179 (8%) | 200 OK [http://localhost/suggestions]

@@ -9,6 +9,17 @@
     <th>&nbsp;</th>
     <th>Name</th>
   </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td colspan=4>
+    <% form_for :suggestion do |form| %>
+      <%= form.text_field :name %>
+      <%= form.submit "Create" %>
+    <% end %>
+    </td>
+  </tr>
+
 
 <% for name in @suggestions %>
   <tr>
@@ -40,21 +51,10 @@
     <!--<td><%= link_to 'Show', name%></td>-->
   </tr>
 <% end %>
-<tr>
-<td></td>
-<td></td>
-<td colspan=4>
-<% form_for :suggestion do |form| %>
-  <%= form.text_field :name %>
-  <%= form.submit "Create" %>
-<% end %>
-</td>
-</tr>
-
 </table>
 
 
 <br />
 
-<%= link_to 'New', new_suggestion_path %>
+<%= link_to 'Add a new suggestion', new_suggestion_path %>
 
