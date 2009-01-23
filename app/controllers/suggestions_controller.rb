@@ -2,7 +2,8 @@ class SuggestionsController < ApplicationController
   # GET /suggestions
   # GET /suggestions.xml
   def index
-    @suggestions = Suggestion.find(:all, :order => "votes DESC")
+    @suggestions = Suggestion.find(:all, 
+                      :order => "votes DESC, name")
 
     respond_to do |format|
       format.html # index.html.erb
@@ -45,10 +46,11 @@ class SuggestionsController < ApplicationController
     respond_to do |format|
       if @suggestion.save
         #flash[:notice] = 'Suggestion was successfully created.'
-        format.html { redirect_to(suggestions_url) } 
+        format.html { redirect_to(root_url) } 
         format.xml  { render :xml => @suggestion, :status => :created, :location => @suggestion }
       else
-        format.html { render :action => "new" }
+        flash[:notice] = 'That name has already been suggested.'
+        format.html { redirect_to(root_url) }
         format.xml  { render :xml => @suggestion.errors, :status => :unprocessable_entity }
       end
     end
@@ -62,7 +64,7 @@ class SuggestionsController < ApplicationController
     respond_to do |format|
       if @suggestion.update_attributes(params[:suggestion])
         #flash[:notice] = 'Suggestion was successfully updated.'
-        format.html { redirect_to(suggestions_url) }
+        format.html { redirect_to(root_url) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -78,7 +80,7 @@ class SuggestionsController < ApplicationController
     @suggestion.destroy
 
     respond_to do |format|
-      format.html { redirect_to(suggestions_url) }
+      format.html { redirect_to(root_url) }
       format.xml  { head :ok }
     end
   end
@@ -93,7 +95,7 @@ class SuggestionsController < ApplicationController
     @suggestion.update_attribute :votes, @suggestion.votes + params[:by].to_i 
     
     respond_to do |format|
-      format.html { redirect_to(suggestions_url) }
+      format.html { redirect_to(root_url) } 
       format.xml  { head :ok }
     end
   end
