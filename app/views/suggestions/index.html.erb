@@ -1,49 +1,53 @@
 <%= javascript_include_tag :defaults %>
 
-<h1>Name suggestions</h1>
+<h1>Baby name suggestions</h1>
 
 
 <table>
   <tr>
     <th>Votes</th>
-    <th>&nbsp;</th>
     <th>Name</th>
+    <th></th>
+    <th>Comments </th>
+    <th></th>
+    <th></th>
   </tr>
   <tr>
     <td></td>
-    <td></td>
-    <td colspan=4>
     <% form_for :suggestion do |form| %>
-      <%= form.text_field :name %>
-      <%= form.submit "Create" %>
+      <td> <%= form.text_field :name %> </td>
+      <td></td>
+      <td> <%= form.text_field :desc, :cols => 40 %> </td>
+      <td> <%= form.submit "Add new" %> </td>
+      <td> </td>
     <% end %>
-    </td>
   </tr>
 
 
 <% for name in @suggestions %>
-  <tr>
-    <td>
-      <span id="suggestion<%= name.id.to_s %>">
-        <%=name.votes%>
-    </span></td>
-    <td><%= link_to '&uArr',
-            { :action => 'modify_votes', 
-              :id => name.id, 
-              :by => 1 },
-            :update => "suggestion" + name.id.to_s %>
-   <%= link_to '&dArr',
-            { :action => 'modify_votes', 
-              :id => name.id, 
-              :by => -1 },
-            :update => "suggestion" + name.id.to_s %>
+  <tr valign="top" class="<%= cycle('name-odd', 'name-even') %>"> 
+    <td id="vote"> 
+      <%= link_to(image_tag("/images/darrow.png", :id => "arrow", :size => "10x10"),
+             { :action => 'modify_votes', 
+               :id => name.id, 
+               :by => -1 },
+             :update => "suggestion" + name.id.to_s) %>
+         <span id="suggestion<%= name.id.to_s %>">
+           <%=name.votes%>
+         </span>
+         <%= link_to(image_tag("/images/uarrow.png", :id => "arrow", :size => "10x10"),
+             { :action => 'modify_votes', 
+               :id => name.id, 
+               :by => 1 },
+             :update => "suggestion" + name.id.to_s) %>
     </td>
     <td><%=h name.name %></td>
     <td><%=h name.sex %></td>
-    <td><%=h name.desc %></td> 
-    <td>(<%= link_to 'Edit', edit_suggestion_path(name) %>) 
+    <td><%=h truncate(name.desc, 40) %></td> 
+    <td>(<%= link_to 'Edit', edit_suggestion_path(name) %>)</td>
+    <td class="hidden"> 
         <span id="hidedelete" >
-          <%= link_to 'Destroy', name, 
+          <%= link_to 'delete', name, 
                       :confirm => 'Are you sure?', 
                       :method => :delete %>
         </span>

@@ -13,6 +13,10 @@
   <%=h @suggestion.sex %>
 </p>
 
+<p>
+  <b>Comments:</b>
+  <%=h @suggestion.desc %>
+</p>
 
 <%= link_to 'Edit', edit_suggestion_path(@suggestion) %> |
 <%= link_to 'Home', suggestions_path %>

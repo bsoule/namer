@@ -61,8 +61,8 @@ class SuggestionsController < ApplicationController
 
     respond_to do |format|
       if @suggestion.update_attributes(params[:suggestion])
-        flash[:notice] = 'Suggestion was successfully updated.'
-        format.html { redirect_to(@suggestion) }
+        #flash[:notice] = 'Suggestion was successfully updated.'
+        format.html { redirect_to(suggestions_url) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
