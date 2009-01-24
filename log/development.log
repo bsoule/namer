@@ -14089,3 +14089,273 @@ Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-23 14:30:32) [G
 Rendering template within layouts/suggestions
 Rendering suggestions/index
 Completed in 0.02133 (46 reqs/sec) | Rendering: 0.01358 (63%) | DB: 0.00189 (8%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-23 16:53:08) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDRjYmYxMWM1N2VmZjFiOTk5YzczNGNlOGYxOTcy%0AYWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b3e2fb5ac3d80f8b538b3ee8cdb8426be119737e
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.002759)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.04886 (20 reqs/sec) | Rendering: 0.02299 (47%) | DB: 0.00276 (5%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-23 17:04:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDRjYmYxMWM1N2VmZjFiOTk5YzczNGNlOGYxOTcy%0AYWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b3e2fb5ac3d80f8b538b3ee8cdb8426be119737e
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.002223)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02534 (39 reqs/sec) | Rendering: 0.01751 (69%) | DB: 0.00222 (8%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-23 17:06:37) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDRjYmYxMWM1N2VmZjFiOTk5YzczNGNlOGYxOTcy%0AYWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b3e2fb5ac3d80f8b538b3ee8cdb8426be119737e
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.002020)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02765 (36 reqs/sec) | Rendering: 0.01783 (64%) | DB: 0.00202 (7%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-23 17:06:39) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDRjYmYxMWM1N2VmZjFiOTk5YzczNGNlOGYxOTcy%0AYWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b3e2fb5ac3d80f8b538b3ee8cdb8426be119737e
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001992)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02288 (43 reqs/sec) | Rendering: 0.01451 (63%) | DB: 0.00199 (8%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-23 17:06:42) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDRjYmYxMWM1N2VmZjFiOTk5YzczNGNlOGYxOTcy%0AYWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b3e2fb5ac3d80f8b538b3ee8cdb8426be119737e
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.025906)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.05117 (19 reqs/sec) | Rendering: 0.01874 (36%) | DB: 0.02591 (50%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-23 17:10:42) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDRjYmYxMWM1N2VmZjFiOTk5YzczNGNlOGYxOTcy%0AYWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b3e2fb5ac3d80f8b538b3ee8cdb8426be119737e
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.003471)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02939 (34 reqs/sec) | Rendering: 0.01967 (66%) | DB: 0.00347 (11%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-23 17:10:44) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDRjYmYxMWM1N2VmZjFiOTk5YzczNGNlOGYxOTcy%0AYWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b3e2fb5ac3d80f8b538b3ee8cdb8426be119737e
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001742)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02162 (46 reqs/sec) | Rendering: 0.01447 (66%) | DB: 0.00174 (8%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-23 17:13:18) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDRjYmYxMWM1N2VmZjFiOTk5YzczNGNlOGYxOTcy%0AYWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b3e2fb5ac3d80f8b538b3ee8cdb8426be119737e
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.002338)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.08844 (11 reqs/sec) | Rendering: 0.01869 (21%) | DB: 0.00234 (2%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-23 17:13:19) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDRjYmYxMWM1N2VmZjFiOTk5YzczNGNlOGYxOTcy%0AYWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b3e2fb5ac3d80f8b538b3ee8cdb8426be119737e
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001824)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02140 (46 reqs/sec) | Rendering: 0.01409 (65%) | DB: 0.00182 (8%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-23 17:13:20) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDRjYmYxMWM1N2VmZjFiOTk5YzczNGNlOGYxOTcy%0AYWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b3e2fb5ac3d80f8b538b3ee8cdb8426be119737e
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.002304)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02256 (44 reqs/sec) | Rendering: 0.01413 (62%) | DB: 0.00230 (10%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-23 17:16:01) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDRjYmYxMWM1N2VmZjFiOTk5YzczNGNlOGYxOTcy%0AYWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b3e2fb5ac3d80f8b538b3ee8cdb8426be119737e
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.002081)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02358 (42 reqs/sec) | Rendering: 0.01598 (67%) | DB: 0.00208 (8%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-23 17:16:02) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDRjYmYxMWM1N2VmZjFiOTk5YzczNGNlOGYxOTcy%0AYWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b3e2fb5ac3d80f8b538b3ee8cdb8426be119737e
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001945)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.07959 (12 reqs/sec) | Rendering: 0.07218 (90%) | DB: 0.00195 (2%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-23 17:18:38) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDRjYmYxMWM1N2VmZjFiOTk5YzczNGNlOGYxOTcy%0AYWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b3e2fb5ac3d80f8b538b3ee8cdb8426be119737e
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001769)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02565 (38 reqs/sec) | Rendering: 0.01845 (71%) | DB: 0.00177 (6%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-23 17:18:39) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDRjYmYxMWM1N2VmZjFiOTk5YzczNGNlOGYxOTcy%0AYWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b3e2fb5ac3d80f8b538b3ee8cdb8426be119737e
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001759)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02070 (48 reqs/sec) | Rendering: 0.01369 (66%) | DB: 0.00176 (8%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-23 17:18:47) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDRjYmYxMWM1N2VmZjFiOTk5YzczNGNlOGYxOTcy%0AYWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b3e2fb5ac3d80f8b538b3ee8cdb8426be119737e
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.003485)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02854 (35 reqs/sec) | Rendering: 0.01818 (63%) | DB: 0.00348 (12%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-23 17:26:13) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDRjYmYxMWM1N2VmZjFiOTk5YzczNGNlOGYxOTcy%0AYWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b3e2fb5ac3d80f8b538b3ee8cdb8426be119737e
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001901)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02920 (34 reqs/sec) | Rendering: 0.01917 (65%) | DB: 0.00190 (6%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-23 17:26:20) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDRjYmYxMWM1N2VmZjFiOTk5YzczNGNlOGYxOTcy%0AYWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b3e2fb5ac3d80f8b538b3ee8cdb8426be119737e
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001952)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02282 (43 reqs/sec) | Rendering: 0.01513 (66%) | DB: 0.00195 (8%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#modify_votes (for 127.0.0.1 at 2009-01-23 17:28:48) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDRjYmYxMWM1N2VmZjFiOTk5YzczNGNlOGYxOTcy%0AYWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b3e2fb5ac3d80f8b538b3ee8cdb8426be119737e
+  Parameters: {"by"=>"1", "action"=>"modify_votes", "id"=>"37", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.000279)[0m   [0;1mSELECT * FROM suggestions WHERE (suggestions."id" = 37) [0m
+  [4;35;1mSuggestion Update (0.000528)[0m   [0mUPDATE suggestions SET "created_at" = '2009-01-23 11:45:36', "name" = 'Amherst', "desc" = '', "votes" = 2, "sex" = NULL, "updated_at" = '2009-01-23 17:28:48' WHERE "id" = 37[0m
+Redirected to http://localhost:3000/
+Completed in 0.01463 (68 reqs/sec) | DB: 0.00081 (5%) | 302 Found [http://localhost/suggestions/modify_votes/37?by=1]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-23 17:28:48) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDRjYmYxMWM1N2VmZjFiOTk5YzczNGNlOGYxOTcy%0AYWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b3e2fb5ac3d80f8b538b3ee8cdb8426be119737e
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001836)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02098 (47 reqs/sec) | Rendering: 0.01384 (66%) | DB: 0.00184 (8%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#modify_votes (for 127.0.0.1 at 2009-01-23 17:28:52) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDRjYmYxMWM1N2VmZjFiOTk5YzczNGNlOGYxOTcy%0AYWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b3e2fb5ac3d80f8b538b3ee8cdb8426be119737e
+  Parameters: {"by"=>"-1", "action"=>"modify_votes", "id"=>"37", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.000243)[0m   [0mSELECT * FROM suggestions WHERE (suggestions."id" = 37) [0m
+  [4;36;1mSuggestion Update (0.000357)[0m   [0;1mUPDATE suggestions SET "created_at" = '2009-01-23 11:45:36', "name" = 'Amherst', "desc" = '', "votes" = 1, "sex" = NULL, "updated_at" = '2009-01-23 17:28:52' WHERE "id" = 37[0m
+Redirected to http://localhost:3000/
+Completed in 0.01214 (82 reqs/sec) | DB: 0.00060 (4%) | 302 Found [http://localhost/suggestions/modify_votes/37?by=-1]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-23 17:28:52) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDRjYmYxMWM1N2VmZjFiOTk5YzczNGNlOGYxOTcy%0AYWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b3e2fb5ac3d80f8b538b3ee8cdb8426be119737e
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001813)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02092 (47 reqs/sec) | Rendering: 0.01373 (65%) | DB: 0.00181 (8%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-23 19:37:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDRjYmYxMWM1N2VmZjFiOTk5YzczNGNlOGYxOTcy%0AYWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b3e2fb5ac3d80f8b538b3ee8cdb8426be119737e
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.002240)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.18651 (5 reqs/sec) | Rendering: 0.15036 (80%) | DB: 0.00224 (1%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#modify_votes (for 127.0.0.1 at 2009-01-23 19:37:39) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDRjYmYxMWM1N2VmZjFiOTk5YzczNGNlOGYxOTcy%0AYWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b3e2fb5ac3d80f8b538b3ee8cdb8426be119737e
+  Parameters: {"by"=>"1", "action"=>"modify_votes", "id"=>"30", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.000246)[0m   [0mSELECT * FROM suggestions WHERE (suggestions."id" = 30) [0m
+  [4;36;1mSuggestion Update (0.000429)[0m   [0;1mUPDATE suggestions SET "created_at" = '2009-01-22 14:34:15', "name" = 'Cantor William', "desc" = 'for his great grandpas (Gpa Kalkman, and Gpa Dingle)', "votes" = 14, "sex" = '', "updated_at" = '2009-01-23 19:37:39' WHERE "id" = 30[0m
+Redirected to http://localhost:3000/
+Completed in 0.01240 (80 reqs/sec) | DB: 0.00067 (5%) | 302 Found [http://localhost/suggestions/modify_votes/30?by=1]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-23 19:37:39) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDRjYmYxMWM1N2VmZjFiOTk5YzczNGNlOGYxOTcy%0AYWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b3e2fb5ac3d80f8b538b3ee8cdb8426be119737e
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001776)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02108 (47 reqs/sec) | Rendering: 0.01379 (65%) | DB: 0.00178 (8%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#modify_votes (for 127.0.0.1 at 2009-01-23 19:37:43) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDRjYmYxMWM1N2VmZjFiOTk5YzczNGNlOGYxOTcy%0AYWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b3e2fb5ac3d80f8b538b3ee8cdb8426be119737e
+  Parameters: {"by"=>"-1", "action"=>"modify_votes", "id"=>"30", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.000236)[0m   [0;1mSELECT * FROM suggestions WHERE (suggestions."id" = 30) [0m
+  [4;35;1mSuggestion Update (0.000327)[0m   [0mUPDATE suggestions SET "created_at" = '2009-01-22 14:34:15', "name" = 'Cantor William', "desc" = 'for his great grandpas (Gpa Kalkman, and Gpa Dingle)', "votes" = 13, "sex" = '', "updated_at" = '2009-01-23 19:37:43' WHERE "id" = 30[0m
+Redirected to http://localhost:3000/
+Completed in 0.01202 (83 reqs/sec) | DB: 0.00056 (4%) | 302 Found [http://localhost/suggestions/modify_votes/30?by=-1]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-23 19:37:43) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDRjYmYxMWM1N2VmZjFiOTk5YzczNGNlOGYxOTcy%0AYWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b3e2fb5ac3d80f8b538b3ee8cdb8426be119737e
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001719)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02095 (47 reqs/sec) | Rendering: 0.01400 (66%) | DB: 0.00172 (8%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#modify_votes (for 127.0.0.1 at 2009-01-23 19:37:44) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDRjYmYxMWM1N2VmZjFiOTk5YzczNGNlOGYxOTcy%0AYWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b3e2fb5ac3d80f8b538b3ee8cdb8426be119737e
+  Parameters: {"by"=>"-1", "action"=>"modify_votes", "id"=>"30", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.000240)[0m   [0mSELECT * FROM suggestions WHERE (suggestions."id" = 30) [0m
+  [4;36;1mSuggestion Update (0.000325)[0m   [0;1mUPDATE suggestions SET "created_at" = '2009-01-22 14:34:15', "name" = 'Cantor William', "desc" = 'for his great grandpas (Gpa Kalkman, and Gpa Dingle)', "votes" = 12, "sex" = '', "updated_at" = '2009-01-23 19:37:44' WHERE "id" = 30[0m
+Redirected to http://localhost:3000/
+Completed in 0.01227 (81 reqs/sec) | DB: 0.00057 (4%) | 302 Found [http://localhost/suggestions/modify_votes/30?by=-1]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-23 19:37:44) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDRjYmYxMWM1N2VmZjFiOTk5YzczNGNlOGYxOTcy%0AYWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b3e2fb5ac3d80f8b538b3ee8cdb8426be119737e
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001746)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02145 (46 reqs/sec) | Rendering: 0.01394 (64%) | DB: 0.00175 (8%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#edit (for 127.0.0.1 at 2009-01-23 19:38:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDRjYmYxMWM1N2VmZjFiOTk5YzczNGNlOGYxOTcy%0AYWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b3e2fb5ac3d80f8b538b3ee8cdb8426be119737e
+  Parameters: {"action"=>"edit", "id"=>"30", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.000245)[0m   [0;1mSELECT * FROM suggestions WHERE (suggestions."id" = 30) [0m
+Rendering template within layouts/suggestions
+Rendering suggestions/edit
+Completed in 0.00898 (111 reqs/sec) | Rendering: 0.00300 (33%) | DB: 0.00025 (2%) | 200 OK [http://localhost/suggestions/30/edit]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-23 19:38:38) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDRjYmYxMWM1N2VmZjFiOTk5YzczNGNlOGYxOTcy%0AYWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--b3e2fb5ac3d80f8b538b3ee8cdb8426be119737e
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001755)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02131 (46 reqs/sec) | Rendering: 0.01407 (66%) | DB: 0.00175 (8%) | 200 OK [http://localhost/suggestions]

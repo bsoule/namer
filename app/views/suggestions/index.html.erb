@@ -15,9 +15,9 @@
   <tr>
     <td></td>
     <% form_for :suggestion do |form| %>
-      <td> <%= form.text_field :name %> </td>
+      <td> <%= form.text_field :name, :id => "newnamebox" %> </td>
       <td></td>
-      <td> <%= form.text_field :desc, :cols => 40 %> </td>
+      <td> <%= form.text_field :desc, :size => 40 %> </td>
       <td> <%= form.submit "Add new" %> </td>
       <td> </td>
     <% end %>
@@ -55,10 +55,22 @@
     <!--<td><%= link_to 'Show', name%></td>-->
   </tr>
 <% end %>
+    <td></td>
+    <% form_for :suggestion do |form| %>
+      <td> <%= form.text_field :name %> </td>
+      <td></td>
+      <td> <%= form.text_field :desc, :size => 40 %> </td>
+      <td> <%= form.submit "Add new" %> </td>
+      <td> </td>
+    <% end %>
+  </tr>
+
+
 </table>
 
 
 <br />
 
+<!--
 <%= link_to 'Add a new suggestion', new_suggestion_path %>
-
+-->
