@@ -49,7 +49,7 @@ class SuggestionsController < ApplicationController
         format.html { redirect_to(root_url) } 
         format.xml  { render :xml => @suggestion, :status => :created, :location => @suggestion }
       else
-        flash[:notice] = 'That name has already been suggested.'
+        flash[:notice] = 'Thanks, but that name has already been suggested.'
         format.html { redirect_to(root_url) }
         format.xml  { render :xml => @suggestion.errors, :status => :unprocessable_entity }
       end
