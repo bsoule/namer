@@ -46,20 +46,20 @@
   <tr valign="top" class="<%= cycle('name-odd', 'name-even') %>"> 
     <td id="vote"> 
       <%= link_to(image_tag(
-          linkd, 
-          :id => "arrow", :size => "18x13"),
+          linku, :id => "arrow", :size => "18x13"),
           { :action => 'modify_votes', 
             :id => name.id, 
-            :by => byd },
+            :by => byu },
           :update => "suggestion" + name.id.to_s) %>
       <span id="suggestion<%= name.id.to_s %>">
         <%=name.votes%>
       </span>
       <%= link_to(image_tag(
-          linku, :id => "arrow", :size => "18x13"),
+          linkd, 
+          :id => "arrow", :size => "18x13"),
           { :action => 'modify_votes', 
             :id => name.id, 
-            :by => byu },
+            :by => byd },
           :update => "suggestion" + name.id.to_s) %>
     </td>
     <td><%=h name.name %></td>

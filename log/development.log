@@ -21225,3 +21225,39 @@ Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 12:59:38) [G
 Rendering template within layouts/suggestions
 Rendering suggestions/index
 Completed in 0.02868 (34 reqs/sec) | Rendering: 0.02050 (71%) | DB: 0.00186 (6%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 13:02:07) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001817)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02656 (37 reqs/sec) | Rendering: 0.01696 (63%) | DB: 0.00182 (6%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 13:02:21) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001790)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.08221 (12 reqs/sec) | Rendering: 0.01546 (18%) | DB: 0.00179 (2%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 13:02:50) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001571)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02119 (47 reqs/sec) | Rendering: 0.01423 (67%) | DB: 0.00157 (7%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 13:04:21) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001692)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02500 (39 reqs/sec) | Rendering: 0.01770 (70%) | DB: 0.00169 (6%) | 200 OK [http://localhost/]
