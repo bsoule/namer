@@ -25,21 +25,42 @@
 
 
 <% for name in @suggestions %>
+<% oldv = @user.get_vote(name.name)
+  if (oldv == 1) 
+    linku = "/images/uarrow-lt.png"
+    byu = -1
+    linkd = "/images/darrow-dk.png"
+    byd = -2 
+  elsif (oldv == -1) 
+    linkd = "/images/darrow-lt.png"
+    byd = 1
+    linku = "/images/uarrow-dk.png"
+    byu = 2
+  else
+    linku = "/images/uarrow-dk.png"
+    linkd = "/images/darrow-dk.png"
+    byu = 1
+    byd = -1
+  end 
+%> 
   <tr valign="top" class="<%= cycle('name-odd', 'name-even') %>"> 
     <td id="vote"> 
-      <%= link_to(image_tag("/images/darrow.png", :id => "arrow", :size => "10x10"),
-             { :action => 'modify_votes', 
-               :id => name.id, 
-               :by => -1 },
-             :update => "suggestion" + name.id.to_s) %>
-         <span id="suggestion<%= name.id.to_s %>">
-           <%=name.votes%>
-         </span>
-         <%= link_to(image_tag("/images/uarrow.png", :id => "arrow", :size => "10x10"),
-             { :action => 'modify_votes', 
-               :id => name.id, 
-               :by => 1 },
-             :update => "suggestion" + name.id.to_s) %>
+      <%= link_to(image_tag(
+          linkd, 
+          :id => "arrow", :size => "18x13"),
+          { :action => 'modify_votes', 
+            :id => name.id, 
+            :by => byd },
+          :update => "suggestion" + name.id.to_s) %>
+      <span id="suggestion<%= name.id.to_s %>">
+        <%=name.votes%>
+      </span>
+      <%= link_to(image_tag(
+          linku, :id => "arrow", :size => "18x13"),
+          { :action => 'modify_votes', 
+            :id => name.id, 
+            :by => byu },
+          :update => "suggestion" + name.id.to_s) %>
     </td>
     <td><%=h name.name %></td>
     <td><%=h name.sex %></td>
@@ -48,7 +69,7 @@
     <td class="hidden"> 
         <span id="hidedelete" >
           <%= link_to 'delete', name, 
-                      :confirm => 'Are you sure you want to delete that suggestion?', 
+                      :confirm => 'Are you sure you want to delete this suggestion?', 
                       :method => :delete %>
         </span>
     </td>
@@ -71,6 +92,3 @@
 
 <br />
 
-<!--
-<%= link_to 'Add a new suggestion', new_suggestion_path %>
--->

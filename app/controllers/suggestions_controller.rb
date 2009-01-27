@@ -4,6 +4,7 @@ class SuggestionsController < ApplicationController
   def index
     @suggestions = Suggestion.find(:all, 
                       :order => "votes DESC, name")
+    @user = find_user
 
     respond_to do |format|
       format.html # index.html.erb
@@ -90,14 +91,41 @@ class SuggestionsController < ApplicationController
   #  @suggestion.update_attribute :votes, @suggestion.votes + params[:by].to_i 
   #  render_text @suggestion.votes
   #end
-  def modify_votes
+  def modify_votes_old
+    # find and update the suggestion's vote count
     @suggestion = Suggestion.find(params[:id])
     @suggestion.update_attribute :votes, @suggestion.votes + params[:by].to_i 
-    
+   
     respond_to do |format|
       format.html { redirect_to(root_url) } 
       format.xml  { head :ok }
     end
   end
+
+  def modify_votes # new
+    # find and update the suggestion's vote count
+    @suggestion = Suggestion.find(params[:id])
+    by = params[:by].to_i
+    @suggestion.update_attribute :votes, @suggestion.votes + by 
+
+    # update user vote info in session
+    @user = find_user
+    oldv = @user.get_vote(@suggestion.name)
+    oldv = 0 if oldv == nil
+    @user.vote_on(@suggestion.name,by+oldv)
+   
+    respond_to do |format|
+      format.html { redirect_to(root_url) } 
+      format.xml  { head :ok }
+    end
+  end
+
+  private
+    def find_user
+      unless session[:user]
+        session[:user] = User.new
+      end
+      session[:user]
+    end
 
 end
