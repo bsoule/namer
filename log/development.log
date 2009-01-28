@@ -21261,3 +21261,436 @@ Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 13:04:21) [G
 Rendering template within layouts/suggestions
 Rendering suggestions/index
 Completed in 0.02500 (39 reqs/sec) | Rendering: 0.01770 (70%) | DB: 0.00169 (6%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 13:05:10) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001694)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02174 (46 reqs/sec) | Rendering: 0.01435 (66%) | DB: 0.00169 (7%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 13:05:41) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001596)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02453 (40 reqs/sec) | Rendering: 0.01746 (71%) | DB: 0.00160 (6%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 13:08:59) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001594)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02122 (47 reqs/sec) | Rendering: 0.01419 (66%) | DB: 0.00159 (7%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 13:11:04) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001653)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02395 (41 reqs/sec) | Rendering: 0.01673 (69%) | DB: 0.00165 (6%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 13:11:14) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001700)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02447 (40 reqs/sec) | Rendering: 0.01387 (56%) | DB: 0.00170 (6%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 13:11:48) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001638)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02497 (40 reqs/sec) | Rendering: 0.01783 (71%) | DB: 0.00164 (6%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 13:13:30) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001616)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02314 (43 reqs/sec) | Rendering: 0.01629 (70%) | DB: 0.00162 (6%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 13:13:43) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001604)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02168 (46 reqs/sec) | Rendering: 0.01423 (65%) | DB: 0.00160 (7%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 13:13:54) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001586)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02048 (48 reqs/sec) | Rendering: 0.01339 (65%) | DB: 0.00159 (7%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 13:17:31) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001708)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02219 (45 reqs/sec) | Rendering: 0.01420 (63%) | DB: 0.00171 (7%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#edit (for 127.0.0.1 at 2009-01-27 13:17:35) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"action"=>"edit", "id"=>"4", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.000260)[0m   [0mSELECT * FROM suggestions WHERE (suggestions."id" = 4) [0m
+Rendering template within layouts/suggestions
+Rendering suggestions/edit
+Completed in 0.02882 (34 reqs/sec) | Rendering: 0.02297 (79%) | DB: 0.00026 (0%) | 200 OK [http://localhost/suggestions/4/edit]
+
+
+Processing SuggestionsController#update (for 127.0.0.1 at 2009-01-27 13:18:20) [PUT]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"commit"=>"Update", "suggestion"=>{"sex"=>"girl", "desc"=>"We love kapoooo, oh yes we dooooo! We don't love anyone, as much as yooooooooou! and then let's keep talking until the whole thing overflows because really, who doesn't love kapoo? also I need to see what happens when there is too much text, will my overflow ellipsis hidden settings work? will they?"}, "authenticity_token"=>"5e2ddb1f57c80e3b71df72bae3ab20a8701aef81", "_method"=>"put", "action"=>"update", "id"=>"4", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.000268)[0m   [0;1mSELECT * FROM suggestions WHERE (suggestions."id" = 4) [0m
+  [4;35;1mSuggestion Load (0.000146)[0m   [0mSELECT * FROM suggestions WHERE (suggestions.name = 'Kapoo' AND suggestions.id <> 4) LIMIT 1[0m
+  [4;36;1mSuggestion Update (0.000332)[0m   [0;1mUPDATE suggestions SET "created_at" = '2009-01-12 03:41:48', "name" = 'Kapoo', "desc" = 'We love kapoooo, oh yes we dooooo! We don''t love anyone, as much as yooooooooou! and then let''s keep talking until the whole thing overflows because really, who doesn''t love kapoo? also I need to see what happens when there is too much text, will my overflow ellipsis hidden settings work? will they?', "votes" = 5, "sex" = 'girl', "updated_at" = '2009-01-27 13:18:20' WHERE "id" = 4[0m
+Redirected to http://localhost:3000/
+Completed in 0.01247 (80 reqs/sec) | DB: 0.00075 (5%) | 302 Found [http://localhost/suggestions/4]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 13:18:20) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001555)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02049 (48 reqs/sec) | Rendering: 0.01339 (65%) | DB: 0.00155 (7%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 13:18:53) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001578)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.08029 (12 reqs/sec) | Rendering: 0.07308 (91%) | DB: 0.00158 (1%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 13:18:54) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001596)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02123 (47 reqs/sec) | Rendering: 0.01419 (66%) | DB: 0.00160 (7%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 13:20:40) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001580)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02161 (46 reqs/sec) | Rendering: 0.01476 (68%) | DB: 0.00158 (7%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 13:20:49) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001947)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02154 (46 reqs/sec) | Rendering: 0.01405 (65%) | DB: 0.00195 (9%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 13:20:59) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001555)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.08061 (12 reqs/sec) | Rendering: 0.07385 (91%) | DB: 0.00155 (1%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 13:27:41) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001938)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02763 (36 reqs/sec) | Rendering: 0.01703 (61%) | DB: 0.00194 (7%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 13:27:43) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001700)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02131 (46 reqs/sec) | Rendering: 0.01384 (64%) | DB: 0.00170 (7%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 13:35:04) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001572)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02328 (42 reqs/sec) | Rendering: 0.01617 (69%) | DB: 0.00157 (6%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 13:35:26) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001696)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.12231 (8 reqs/sec) | Rendering: 0.11346 (92%) | DB: 0.00170 (1%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 13:35:26) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+
+
+SQLite3::SQLException (cannot start a transaction within a transaction):
+    /Library/Ruby/Gems/1.8/gems/sqlite3-ruby-1.2.4/lib/sqlite3/errors.rb:62:in `check'
+    /Library/Ruby/Gems/1.8/gems/sqlite3-ruby-1.2.4/lib/sqlite3/resultset.rb:56:in `check'
+    /Library/Ruby/Gems/1.8/gems/sqlite3-ruby-1.2.4/lib/sqlite3/resultset.rb:48:in `commence'
+    /Library/Ruby/Gems/1.8/gems/sqlite3-ruby-1.2.4/lib/sqlite3/resultset.rb:38:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/sqlite3-ruby-1.2.4/lib/sqlite3/statement.rb:135:in `new'
+    /Library/Ruby/Gems/1.8/gems/sqlite3-ruby-1.2.4/lib/sqlite3/statement.rb:135:in `execute'
+    /Library/Ruby/Gems/1.8/gems/sqlite3-ruby-1.2.4/lib/sqlite3/database.rb:182:in `execute'
+    /Library/Ruby/Gems/1.8/gems/sqlite3-ruby-1.2.4/lib/sqlite3/database.rb:157:in `prepare'
+    /Library/Ruby/Gems/1.8/gems/sqlite3-ruby-1.2.4/lib/sqlite3/database.rb:181:in `execute'
+    /Library/Ruby/Gems/1.8/gems/sqlite3-ruby-1.2.4/lib/sqlite3/database.rb:558:in `transaction'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/sqlite_adapter.rb:156:in `begin_db_transaction'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/sqlite_adapter.rb:345:in `catch_schema_changes'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/sqlite_adapter.rb:156:in `begin_db_transaction'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/database_statements.rb:63:in `transaction'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/transactions.rb:80:in `transaction'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/transactions.rb:100:in `transaction'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/transactions.rb:108:in `save'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/transactions.rb:120:in `rollback_active_record_state!'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/transactions.rb:108:in `save'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session/active_record_store.rb:310:in `update'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/base.rb:1198:in `silence'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session/active_record_store.rb:310:in `update'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session/active_record_store.rb:317:in `close'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/cgi/session.rb:324:in `close'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1247:in `close_session'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1292:in `process_cleanup_without_flash'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/flash.rb:173:in `process_cleanup_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:133:in `process_cleanup_without_components'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/components.rb:161:in `process_cleanup'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:532:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+/!\ FAILSAFE /!\  Tue Jan 27 13:35:26 -0500 2009
+  Status: 500 Internal Server Error
+  cannot start a transaction within a transaction
+    /Library/Ruby/Gems/1.8/gems/sqlite3-ruby-1.2.4/lib/sqlite3/errors.rb:62:in `check'
+    /Library/Ruby/Gems/1.8/gems/sqlite3-ruby-1.2.4/lib/sqlite3/resultset.rb:56:in `check'
+    /Library/Ruby/Gems/1.8/gems/sqlite3-ruby-1.2.4/lib/sqlite3/resultset.rb:48:in `commence'
+    /Library/Ruby/Gems/1.8/gems/sqlite3-ruby-1.2.4/lib/sqlite3/resultset.rb:38:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/sqlite3-ruby-1.2.4/lib/sqlite3/statement.rb:135:in `new'
+    /Library/Ruby/Gems/1.8/gems/sqlite3-ruby-1.2.4/lib/sqlite3/statement.rb:135:in `execute'
+    /Library/Ruby/Gems/1.8/gems/sqlite3-ruby-1.2.4/lib/sqlite3/database.rb:182:in `execute'
+    /Library/Ruby/Gems/1.8/gems/sqlite3-ruby-1.2.4/lib/sqlite3/database.rb:157:in `prepare'
+    /Library/Ruby/Gems/1.8/gems/sqlite3-ruby-1.2.4/lib/sqlite3/database.rb:181:in `execute'
+    /Library/Ruby/Gems/1.8/gems/sqlite3-ruby-1.2.4/lib/sqlite3/database.rb:558:in `transaction'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/sqlite_adapter.rb:156:in `begin_db_transaction'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/sqlite_adapter.rb:345:in `catch_schema_changes'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/sqlite_adapter.rb:156:in `begin_db_transaction'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/database_statements.rb:63:in `transaction'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/transactions.rb:80:in `transaction'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/transactions.rb:100:in `transaction'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/transactions.rb:108:in `save'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/transactions.rb:120:in `rollback_active_record_state!'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/transactions.rb:108:in `save'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session/active_record_store.rb:310:in `update'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/base.rb:1198:in `silence'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session/active_record_store.rb:310:in `update'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session/active_record_store.rb:317:in `close'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/cgi/session.rb:324:in `close'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1247:in `close_session'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1292:in `process_cleanup_without_flash'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/flash.rb:173:in `process_cleanup_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:133:in `process_cleanup_without_components'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/components.rb:161:in `process_cleanup'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:532:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 13:35:29) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001635)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02187 (45 reqs/sec) | Rendering: 0.01452 (66%) | DB: 0.00164 (7%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 13:35:31) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.014434)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.20088 (4 reqs/sec) | Rendering: 0.15279 (76%) | DB: 0.01443 (7%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#modify_votes (for 127.0.0.1 at 2009-01-27 16:16:42) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"by"=>"2", "action"=>"modify_votes", "id"=>"16", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.000271)[0m   [0mSELECT * FROM suggestions WHERE (suggestions."id" = 16) [0m
+  [4;36;1mSuggestion Update (0.000346)[0m   [0;1mUPDATE suggestions SET "created_at" = '2009-01-14 17:16:04', "name" = 'Carmen', "desc" = NULL, "votes" = 2, "sex" = NULL, "updated_at" = '2009-01-27 16:16:42' WHERE "id" = 16[0m
+Redirected to http://localhost:3000/
+Completed in 0.01252 (79 reqs/sec) | DB: 0.00062 (4%) | 302 Found [http://localhost/suggestions/modify_votes/16?by=2]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 16:16:42) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001559)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.05156 (19 reqs/sec) | Rendering: 0.04461 (86%) | DB: 0.00156 (3%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#modify_votes (for 127.0.0.1 at 2009-01-27 16:16:50) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"by"=>"2", "action"=>"modify_votes", "id"=>"19", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.000253)[0m   [0;1mSELECT * FROM suggestions WHERE (suggestions."id" = 19) [0m
+  [4;35;1mSuggestion Update (0.000471)[0m   [0mUPDATE suggestions SET "created_at" = '2009-01-14 17:20:16', "name" = 'Frieda', "desc" = NULL, "votes" = 2, "sex" = NULL, "updated_at" = '2009-01-27 16:16:50' WHERE "id" = 19[0m
+Redirected to http://localhost:3000/
+Completed in 0.01262 (79 reqs/sec) | DB: 0.00072 (5%) | 302 Found [http://localhost/suggestions/modify_votes/19?by=2]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 16:16:50) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001601)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02109 (47 reqs/sec) | Rendering: 0.01396 (66%) | DB: 0.00160 (7%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 16:17:19) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.003831)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02361 (42 reqs/sec) | Rendering: 0.01424 (60%) | DB: 0.00383 (16%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 16:17:22) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;36;1mSuggestion Load (0.001628)[0m   [0;1mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02192 (45 reqs/sec) | Rendering: 0.01418 (64%) | DB: 0.00163 (7%) | 200 OK [http://localhost/]
+
+
+Processing SuggestionsController#index (for 127.0.0.1 at 2009-01-27 16:17:59) [GET]
+  Session ID: 819f6b164ab93cbf7d586da98a91b56c
+  Parameters: {"action"=>"index", "controller"=>"suggestions"}
+  [4;35;1mSuggestion Load (0.001681)[0m   [0mSELECT * FROM suggestions ORDER BY votes DESC, name[0m
+Rendering template within layouts/suggestions
+Rendering suggestions/index
+Completed in 0.02111 (47 reqs/sec) | Rendering: 0.01367 (64%) | DB: 0.00168 (7%) | 200 OK [http://localhost/]

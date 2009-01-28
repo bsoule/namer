@@ -19,6 +19,7 @@ th {
 
 #arrow {
   border:0px;
+  padding:3px;
 }
 
 .name-even {
@@ -39,10 +40,17 @@ th {
 
 #vote {
   text-align: center;
-  font-size: larger;
-  font-style: sans-serif;
+  font-size: 20px;
+  font-style: sans-serif, bold;
   color: #888888;
   width: 22px;
+}
+
+.description {
+  width: 400px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 50px;
 }
 
 /* Styles for main page */ 

@@ -43,8 +43,8 @@
     byd = -1
   end 
 %> 
-  <tr valign="top" class="<%= cycle('name-odd', 'name-even') %>"> 
-    <td id="vote"> 
+  <tr valign="middle" height=50px class="<%= cycle('name-odd', 'name-even') %>"> 
+    <td id="vote">
       <%= link_to(image_tag(
           linku, :id => "arrow", :size => "18x13"),
           { :action => 'modify_votes', 
@@ -64,7 +64,7 @@
     </td>
     <td><%=h name.name %></td>
     <td><%=h name.sex %></td>
-    <td><%=h truncate(name.desc, 40) %></td> 
+    <td class="description"><%=h name.desc %></td> 
     <td>(<%= link_to 'Edit', edit_suggestion_path(name) %>)</td>
     <td class="hidden"> 
         <span id="hidedelete" >
